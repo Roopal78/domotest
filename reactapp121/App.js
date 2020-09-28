@@ -119,7 +119,7 @@ export default App;
 */
 
 import React from 'react';
-import { StyleSheet, Text, View ,Button,TextInput} from 'react-native';
+import { StyleSheet, Text, View ,Button,TextInput, ScrollView,Image} from 'react-native';
 // import StudentProfile from './src/components/studentprofile';
 // import Greet from './src/components/greetings';
 // import ButtonComponent from './src/components/buttons';
@@ -165,7 +165,28 @@ export default class App extends React.Component {
      <Text style={styles.portal1}>Announcements</Text>
      
           </View> 
+          <ScrollView>
+
+         
+          <Text style={{fontSize:25, backgroundColor:'skyblue',textAlign:'center'}}>Scoll   Down to see more </Text>
+          
+          <Text>Here we go..</Text>
+          <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{width: 400, height: 300}} />
+       <Text>scroll fourth line</Text>
+          <Text>scroll fifth line</Text>
+          <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{width: 400, height: 400}} />
+
+       <Text>scroll fourth line</Text>
+          <Text>scroll fifth line</Text>
+          <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{width: 400, height: 400}} />
+
+
+       </ScrollView>
        </View>
+       
       
       );
    }
